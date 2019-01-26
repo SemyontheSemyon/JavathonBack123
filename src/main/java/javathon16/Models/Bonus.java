@@ -12,11 +12,35 @@ public class Bonus {
     @GeneratedValue
     private Long id;
 
-    public int value;
+    private int value;
 
-    public Long companyId;
+    private Long companyId;
 
-    public Long idCompany;
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public Long getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Long companyId) {
+        this.companyId = companyId;
+    }
+
+    public Long getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(Long clientId) {
+        this.clientId = clientId;
+    }
+
+    private Long clientId;
 
     private Bonus(){}
 

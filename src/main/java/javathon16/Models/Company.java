@@ -9,7 +9,7 @@ public class Company {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int companyId;
 
     private String name;
 
@@ -27,11 +27,11 @@ public class Company {
     }
 
     public int getId() {
-        return id;
+        return companyId;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.companyId = id;
     }
 
     public String getName() {

@@ -9,7 +9,7 @@ public class Client {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int clientId;
 
     private Long phoneNumber;
 
@@ -27,11 +27,11 @@ public class Client {
     }
 
     public int getId() {
-        return id;
+        return clientId;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.clientId = id;
     }
 
     public Long getPhoneNumber() {

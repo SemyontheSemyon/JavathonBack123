@@ -26,6 +26,11 @@ public class ClientController {
         return clientRepository.findById(id).get();
     }
 
+    @GetMapping("/api/client/getbyphone")
+    public Client getClientByPhone(@RequestParam(value = "id") long phone){
+        return clientRepository.findByPhoneNumber(phone);
+    }
+
     @PostMapping("/api/client/add")
 
     public String addClient(@RequestParam (value = "name") String name,
@@ -37,11 +42,15 @@ public class ClientController {
         return "Fail";
     }
 
-    @GetMapping("/api/client/deletebyid")
+    @PostMapping("/api/client/deletebyid")
     public void deleteClient(@RequestParam(value = "id") int id){
-
         clientRepository.deleteById(id);
+    }
 
+    @PostMapping("/api/client/deletebyphone")
+    public void deleteClient(@RequestParam(value = "id") Long phone){
+
+        clientRepository.delete(getClientByPhone(phone));
     }
 
 

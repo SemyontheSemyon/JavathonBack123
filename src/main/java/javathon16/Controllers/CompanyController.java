@@ -25,9 +25,24 @@ public class CompanyController {
         return companyRepository.findById(id).get();
     }
 
+    @GetMapping("/api/company/getbyname")
+    public Company getCompanyByName( @RequestParam(value = "name") String name) {return companyRepository.findByName(name);}
+
     @PostMapping("/api/company/add")
     public void addcompany(@RequestParam (value = "name") String name,
                              @RequestParam (value ="maxBonus" ) int maxBonus) {
         companyRepository.save(new Company(name, maxBonus));
     }
+
+    @PostMapping("/api/company/removebyid")
+    public void removeCompanyById( @RequestParam(value = "id" ) int id){
+        companyRepository.delete(getCompanyById(id));
+    }
+
+    @PostMapping("/api/company/removebyname")
+    public void removeCompanyById( @RequestParam(value = "name" ) String name){
+        companyRepository.delete(getCompanyByName(name));
+    }
+
+
 }

@@ -25,11 +25,13 @@ public class BonusController {
         this.bonusRepository = bonusRepository;
         this.companyRepository = companyRepository;
         this.clientRepository = clientRepository;
+
+
     }
 
-    @GetMapping("/api/client/findbonus")
-    public List<Bonus> getBonusByClientIdAndCompanyName(@RequestParam(value = "id") int clientId,
-                                                        @RequestParam(value = "id") int companyId)
+    @GetMapping("/api/bonus/findbonus")
+    public List<Bonus> getBonusByClientIdAndCompanyName(@RequestParam(value = "id1") int clientId,
+                                                        @RequestParam(value = "id2") int companyId)
     {
         return bonusRepository.findAllByClientIdAndCompanyId(clientId, companyId);
     }

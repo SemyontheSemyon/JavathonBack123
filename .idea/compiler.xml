@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavathonBack" />
+        <module name="JavathonBack1" />
         <module name="JavathonBack123" />
         <module name="JavathonBackk" />
       </profile>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JavathonBack" options="-parameters" />
+      <module name="JavathonBack1" options="-parameters" />
       <module name="JavathonBack123" options="-parameters" />
       <module name="JavathonBackk" options="-parameters" />
     </option>

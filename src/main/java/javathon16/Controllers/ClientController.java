@@ -30,7 +30,7 @@ public class ClientController {
 
     public String addClient(@RequestParam (value = "name") String name,
                             @RequestParam( value = "phoneNumber") long phoneNumber){
-        if (Long.toString(phoneNumber).matches("[0-9*#+() -]*")){
+        if (Long.toString(phoneNumber).matches("[0-9*#+() -]{10}")){
             clientRepository.save(new Client(phoneNumber, name));
             return "Succsess";
         }

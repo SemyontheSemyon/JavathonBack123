@@ -37,4 +37,17 @@ public class CompanyController {
     public List<Company> getCompanies(){
         return (List)companyRepository.findAll();
     }
+
+    @GetMapping("/api/company/getbyname")
+    public Company getCompanyByName( @RequestParam(value = "name") String name) {return companyRepository.findByName(name);}
+
+    @PostMapping("/api/company/removebyid")
+    public void removeCompanyById( @RequestParam(value = "id" ) int id){
+        companyRepository.delete(getCompanyById(id));
+    }
+
+    @PostMapping("/api/company/removebyname")
+    public void removeCompanyById( @RequestParam(value = "name" ) String name){
+        companyRepository.delete(getCompanyByName(name));
+    }
 }

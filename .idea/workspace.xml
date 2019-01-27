@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c3c09909-2f52-40d1-a8da-25cbb9c8ec31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javathon16/Models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javathon16/Models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javathon16/Models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javathon16/Models/Company.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/javathon16/Controllers/CompanyController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -64,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/javathon16/Models/Company.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="367">
@@ -209,7 +207,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548549083488" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548551360745" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -258,7 +256,7 @@
       <updated>1548537560656</updated>
       <workItem from="1548537561944" duration="2951000" />
       <workItem from="1548541248982" duration="73000" />
-      <workItem from="1548541858174" duration="3801000" />
+      <workItem from="1548541858174" duration="4617000" />
     </task>
     <task id="LOCAL-00001">
       <created>1548540121334</created>
@@ -309,11 +307,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548547376735</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="semyon">
+      <created>1548549435844</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1548549435844</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6825000" />
+    <option name="totallyTimeSpent" value="7641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1294" height="694" extended-state="6" />
@@ -425,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javathon16/Models/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javathon16/Controllers/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -447,6 +445,13 @@
             <element signature="e#1372#1373#0" expanded="true" />
             <element signature="e#1421#1422#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javathon16/Models/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
     </entry>

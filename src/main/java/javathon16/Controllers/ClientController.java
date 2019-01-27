@@ -15,7 +15,10 @@ public class ClientController {
 
     @Autowired
     public ClientController(ClientRepository clientRepository){
+
         this.clientRepository = clientRepository;
+
+        clientRepository.save(new Client(893135745l, "Semen"));
     }
 
     @GetMapping("/api/client/getbyid")
@@ -24,18 +27,22 @@ public class ClientController {
     }
 
     @PostMapping("/api/client/add")
-    public void addclient(@RequestParam(value = "name") String name,
-                            @RequestParam(value = "phoneNumber") long phoneNumber){
-        clientRepository.save(new Client(phoneNumber, name));
+
+    public String addClient(@RequestParam (value = "name") String name,
+                            @RequestParam( value = "phoneNumber") long phoneNumber){
+        if (Long.toString(phoneNumber).matches("[0-9*#+() -]*")){
+            clientRepository.save(new Client(phoneNumber, name));
+            return "Succsess";
+        }
+        return "Fail";
     }
 
     @GetMapping("/api/client/deletebyid")
     public void deleteClient(@RequestParam(value = "id") int id){
 
         clientRepository.deleteById(id);
+
     }
-
-
 
 
 }
